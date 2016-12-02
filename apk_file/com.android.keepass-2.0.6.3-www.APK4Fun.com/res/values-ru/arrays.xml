@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clipboard_timeout_options">
+        <item>30 сек.</item>
+        <item>1 мин.</item>
+        <item>5 мин.</item>
+        <item>Никогда</item>
+    </string-array>
+    <string-array name="list_size_options">
+        <item>Мелкий</item>
+        <item>Обычный</item>
+        <item>Крупный</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="keyfile_default">true</bool>
+    <bool name="maskpass_default">true</bool>
+    <bool name="omitbackup_default">true</bool>
+    <bool name="recentfile_default">true</bool>
+    <bool name="saf_default">false</bool>
+    <bool name="sort_default">true</bool>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clipboard_timeout_options">
+        <item>30秒</item>
+        <item>1分</item>
+        <item>5分</item>
+        <item>なし</item>
+    </string-array>
+    <string-array name="list_size_options">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+    </string-array>
+</resources>

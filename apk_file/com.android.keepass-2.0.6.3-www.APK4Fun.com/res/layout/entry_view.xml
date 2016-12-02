@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/title_block" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/WhiteOnBlack">
+        <TextView android:layout_gravity="center|left" android:id="@id/entry_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="32.0dip" android:layout_weight="1.0" style="@style/ElementTextTitle" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/entry_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic99_blank" android:scaleType="fitXY" style="@style/WhiteOnBlack" />
+    </LinearLayout>
+    <Button android:id="@id/entry_edit" android:layout_width="100.0sp" android:layout_height="wrap_content" android:text="@string/menu_edit" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/entry_divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@android:drawable/divider_horizontal_dark" android:scaleType="fitXY" android:layout_above="@id/entry_edit" />
+    <ScrollView android:scrollbarStyle="insideOverlay" android:id="@id/entry_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/entry_divider2" android:layout_below="@id/title_block">
+        <com.keepassdroid.view.EntryContentsView android:id="@id/entry_contents" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

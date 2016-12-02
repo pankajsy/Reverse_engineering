@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.keepassdroid.view.GroupHeaderView android:id="@id/group_header" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@id/add_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_group" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/add_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_entry" android:layout_toRightOf="@id/add_group" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@android:drawable/divider_horizontal_dark" android:scaleType="fitXY" android:tint="@color/blue_highlight" android:layout_above="@id/add_entry" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/divider2" android:layout_below="@id/group_header" />
+</RelativeLayout>

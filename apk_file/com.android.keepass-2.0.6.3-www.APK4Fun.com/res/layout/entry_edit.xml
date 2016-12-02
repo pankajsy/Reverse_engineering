@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/entry_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_save" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/entry_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_cancel" android:layout_toRightOf="@id/entry_save" android:layout_alignParentBottom="true" />
+    <View android:id="@id/entry_divider" android:scaleType="fitXY" android:layout_above="@id/entry_save" style="@style/DividerEntry" />
+    <com.keepassdroid.view.NoFocusScrollView android:id="@id/entry_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/entry_divider">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/entry_title_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/entry_title" />
+            <ImageButton android:id="@id/icon_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic00" android:layout_below="@id/entry_title_label" android:layout_alignParentRight="true" />
+            <EditText android:id="@id/entry_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_title" android:singleLine="true" android:layout_toLeftOf="@id/icon_button" android:layout_below="@id/entry_title_label" />
+            <View android:id="@id/divider_title" android:layout_marginTop="6.0dip" android:scaleType="fitXY" android:layout_below="@id/icon_button" style="@style/DividerEntry" />
+            <TextView android:id="@id/entry_user_name_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_user_name" android:layout_below="@id/divider_title" />
+            <EditText android:id="@id/entry_user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_username" android:singleLine="true" android:layout_below="@id/entry_user_name_label" android:inputType="textEmailAddress" />
+            <View android:id="@id/divider_username" android:layout_marginTop="6.0dip" android:scaleType="fitXY" android:layout_below="@id/entry_user_name" style="@style/DividerEntry" />
+            <TextView android:id="@id/entry_url_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_url" android:layout_below="@id/divider_username" />
+            <EditText android:id="@id/entry_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_url" android:singleLine="true" android:layout_below="@id/entry_url_label" android:inputType="textUri" />
+            <View android:id="@id/divider_url" android:layout_marginTop="6.0dip" android:scaleType="fitXY" android:layout_below="@id/entry_url" style="@style/DividerEntry" />
+            <TextView android:id="@id/entry_password_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_password" android:layout_below="@id/divider_url" />
+            <Button android:id="@id/generate_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ellipsis" android:layout_below="@id/entry_password_label" android:layout_alignParentRight="true" />
+            <com.keepassdroid.view.PasswordEditText android:typeface="monospace" android:id="@id/entry_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_pass" android:singleLine="true" android:layout_toLeftOf="@id/generate_button" android:layout_alignTop="@id/generate_button" android:inputType="textPassword" />
+            <View android:id="@id/divider_password" android:layout_marginTop="6.0dip" android:scaleType="fitXY" android:layout_below="@id/generate_button" style="@style/DividerEntry" />
+            <TextView android:id="@id/entry_confpassword_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_confpassword" android:layout_below="@id/divider_password" />
+            <com.keepassdroid.view.PasswordEditText android:typeface="monospace" android:id="@id/entry_confpassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_conf_pass" android:singleLine="true" android:layout_below="@id/entry_confpassword_label" android:inputType="textPassword" />
+            <View android:id="@id/divider_confpassword" android:layout_marginTop="6.0dip" android:scaleType="fitXY" android:layout_below="@id/entry_confpassword" style="@style/DividerEntry" />
+            <TextView android:id="@id/entry_comment_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_comment" android:layout_below="@id/divider_confpassword" />
+            <EditText android:id="@id/entry_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_comment" android:layout_below="@id/entry_comment_label" android:inputType="textMultiLine" />
+            <View android:id="@id/divider_comment" android:scaleType="fitXY" android:layout_below="@id/entry_comment" style="@style/DividerEntry" />
+            <LinearLayout android:orientation="vertical" android:id="@id/advanced_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider_comment" />
+            <ImageButton android:id="@id/add_advanced" android:visibility="gone" android:layout_width="30.0sp" android:layout_height="30.0sp" android:src="@android:drawable/ic_input_add" android:scaleType="centerCrop" android:layout_below="@id/advanced_container" />
+        </RelativeLayout>
+    </com.keepassdroid.view.NoFocusScrollView>
+</RelativeLayout>

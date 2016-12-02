@@ -1,0 +1,26 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.android.keepass-2.0.6.3-www.APK4Fun.com.apk
+compressionType: false
+doNotCompress:
+- arsc
+- kdb
+- key
+- kdbx
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '3'
+  targetSdkVersion: '12'
+sharedLibrary: false
+unknownFiles:
+  org/bouncycastle/asn1/util/ASN1Dump.java.orig: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.1
+versionInfo:
+  versionCode: '153'
+  versionName: 2.0.6.3
