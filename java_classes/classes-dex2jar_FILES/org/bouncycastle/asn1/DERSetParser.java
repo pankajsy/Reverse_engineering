@@ -1,0 +1,39 @@
+package org.bouncycastle.asn1;
+
+import java.io.IOException;
+
+public class DERSetParser
+  implements ASN1SetParser
+{
+  private ASN1StreamParser _parser;
+  
+  DERSetParser(ASN1StreamParser paramASN1StreamParser)
+  {
+    this._parser = paramASN1StreamParser;
+  }
+  
+  public DERObject getDERObject()
+  {
+    try
+    {
+      DERSet localDERSet = new DERSet(this._parser.readVector(), false);
+      return localDERSet;
+    }
+    catch (IOException localIOException)
+    {
+      throw new ASN1ParsingException(localIOException.getMessage(), localIOException);
+    }
+  }
+  
+  public DEREncodable readObject()
+    throws IOException
+  {
+    return this._parser.readObject();
+  }
+}
+
+
+/* Location:              /home/pankaj/reverse_engineering/dex2jar-2.0/classes-dex2jar.jar!/org/bouncycastle/asn1/DERSetParser.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */
