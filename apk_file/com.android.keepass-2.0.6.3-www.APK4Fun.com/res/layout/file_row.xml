@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView android:id="@id/file_filename" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GroupText"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/file_filename"
+    style="@style/GroupText"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="4.0sp" />

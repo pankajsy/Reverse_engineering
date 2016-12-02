@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/read_only" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/read_only" style="@style/DarkOnBlackSmall" />
-    <LinearLayout android:gravity="center_vertical" android:padding="2.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/WhiteOnBlack">
-        <TextView android:layout_gravity="center|left" android:id="@id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/root" android:layout_weight="1.0" style="@style/WhiteOnBlack" />
-        <ImageView android:layout_gravity="center|right" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic99_blank" android:scaleType="fitXY" style="@style/WhiteOnBlack" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/read_only"
+        style="@style/DarkOnBlackSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/read_only"
+        android:visibility="gone" />
+
+    <LinearLayout
+        style="@style/WhiteOnBlack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="2.0sp">
+
+        <TextView
+            android:id="@id/group_name"
+            style="@style/WhiteOnBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_weight="1.0"
+            android:text="@string/root" />
+
+        <ImageView
+            android:id="@id/icon"
+            style="@style/WhiteOnBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic99_blank" />
     </LinearLayout>
 </LinearLayout>

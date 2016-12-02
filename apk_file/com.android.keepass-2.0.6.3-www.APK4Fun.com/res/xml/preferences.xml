@@ -1,17 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceScreen android:title="@string/database" android:key="@string/db_key" android:summary="@string/menu_db_settings">
-        <Preference android:enabled="false" android:title="@string/algorithm" android:key="@string/algorithm_key" />
-        <com.keepassdroid.settings.RoundsPreference android:persistent="false" android:title="@string/rounds" android:key="@string/rounds_key" android:positiveButtonText="@string/entry_save" android:negativeButtonText="@string/entry_cancel" android:dialogLayout="@layout/database_settings" />
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:key="@string/db_key"
+        android:summary="@string/menu_db_settings"
+        android:title="@string/database">
+        <Preference
+            android:enabled="false"
+            android:key="@string/algorithm_key"
+            android:title="@string/algorithm" />
+        <com.keepassdroid.settings.RoundsPreference
+            android:dialogLayout="@layout/database_settings"
+            android:key="@string/rounds_key"
+            android:negativeButtonText="@string/entry_cancel"
+            android:persistent="false"
+            android:positiveButtonText="@string/entry_save"
+            android:title="@string/rounds" />
     </PreferenceScreen>
-    <PreferenceScreen android:title="@string/application" android:key="@string/app_key" android:summary="@string/application_settings">
-        <CheckBoxPreference android:title="@string/recentfile_title" android:key="@string/recentfile_key" android:summary="@string/recentfile_summary" android:defaultValue="@bool/recentfile_default" />
-        <CheckBoxPreference android:title="@string/remember_keyfile_title" android:key="@string/keyfile_key" android:summary="@string/remember_keyfile_summary" android:dependency="@string/recentfile_key" android:defaultValue="@bool/keyfile_default" />
-        <ListPreference android:entries="@array/clipboard_timeout_options" android:title="@string/clipboard_timeout" android:key="@string/clipboard_timeout_key" android:summary="@string/clipboard_timeout_summary" android:defaultValue="@string/clipboard_timeout_default" android:dialogTitle="@string/clipboard_timeout" android:entryValues="@array/clipboard_timeout_values" />
-        <ListPreference android:entries="@array/clipboard_timeout_options" android:title="@string/app_timeout" android:key="@string/app_timeout_key" android:summary="@string/app_timeout_summary" android:defaultValue="@string/clipboard_timeout_default" android:dialogTitle="@string/app_timeout" android:entryValues="@array/clipboard_timeout_values" />
-        <CheckBoxPreference android:title="@string/maskpass_title" android:key="@string/maskpass_key" android:summary="@string/maskpass_summary" android:defaultValue="@bool/maskpass_default" />
-        <ListPreference android:entries="@array/list_size_options" android:title="@string/list_size_title" android:key="@string/list_size_key" android:summary="@string/list_size_summary" android:defaultValue="@string/list_size_default" android:dialogTitle="@string/list_size_summary" android:entryValues="@array/list_size_values" />
-        <CheckBoxPreference android:title="@string/omitbackup_title" android:key="@string/omitbackup_key" android:summary="@string/omitbackup_summary" android:defaultValue="@bool/omitbackup_default" />
+    <PreferenceScreen
+        android:key="@string/app_key"
+        android:summary="@string/application_settings"
+        android:title="@string/application">
+        <CheckBoxPreference
+            android:defaultValue="@bool/recentfile_default"
+            android:key="@string/recentfile_key"
+            android:summary="@string/recentfile_summary"
+            android:title="@string/recentfile_title" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/keyfile_default"
+            android:dependency="@string/recentfile_key"
+            android:key="@string/keyfile_key"
+            android:summary="@string/remember_keyfile_summary"
+            android:title="@string/remember_keyfile_title" />
+        <ListPreference
+            android:defaultValue="@string/clipboard_timeout_default"
+            android:dialogTitle="@string/clipboard_timeout"
+            android:entries="@array/clipboard_timeout_options"
+            android:entryValues="@array/clipboard_timeout_values"
+            android:key="@string/clipboard_timeout_key"
+            android:summary="@string/clipboard_timeout_summary"
+            android:title="@string/clipboard_timeout" />
+        <ListPreference
+            android:defaultValue="@string/clipboard_timeout_default"
+            android:dialogTitle="@string/app_timeout"
+            android:entries="@array/clipboard_timeout_options"
+            android:entryValues="@array/clipboard_timeout_values"
+            android:key="@string/app_timeout_key"
+            android:summary="@string/app_timeout_summary"
+            android:title="@string/app_timeout" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/maskpass_default"
+            android:key="@string/maskpass_key"
+            android:summary="@string/maskpass_summary"
+            android:title="@string/maskpass_title" />
+        <ListPreference
+            android:defaultValue="@string/list_size_default"
+            android:dialogTitle="@string/list_size_summary"
+            android:entries="@array/list_size_options"
+            android:entryValues="@array/list_size_values"
+            android:key="@string/list_size_key"
+            android:summary="@string/list_size_summary"
+            android:title="@string/list_size_title" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/omitbackup_default"
+            android:key="@string/omitbackup_key"
+            android:summary="@string/omitbackup_summary"
+            android:title="@string/omitbackup_title" />
     </PreferenceScreen>
 </PreferenceScreen>
