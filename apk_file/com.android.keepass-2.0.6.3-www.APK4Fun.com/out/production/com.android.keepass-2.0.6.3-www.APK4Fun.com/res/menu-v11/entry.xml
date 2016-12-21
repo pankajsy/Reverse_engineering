@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/menu_lock"
+        android:icon="@android:drawable/ic_lock_lock"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_lock" />
+    <item
+        android:id="@id/menu_toggle_pass"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_showpass" />
+    <item
+        android:id="@id/menu_donate"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_donate" />
+    <item
+        android:id="@id/menu_goto_url"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_url" />
+    <item
+        android:id="@id/menu_copy_user"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_copy_user" />
+    <item
+        android:id="@id/menu_copy_pass"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_copy_pass" />
+</menu>

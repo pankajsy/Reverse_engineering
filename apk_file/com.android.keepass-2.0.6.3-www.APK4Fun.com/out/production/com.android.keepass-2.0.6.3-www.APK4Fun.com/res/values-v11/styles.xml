@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Dialog" parent="@android:style/Theme.Holo.Dialog" />
+
+    <style name="DividerEntry">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+
+    <style name="ElementText">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+
+    <style name="ElementTextLarge">
+        <item name="android:textSize">28.0sp</item>
+    </style>
+
+    <style name="ElementTextSmall">
+        <item name="android:textSize">15.0sp</item>
+    </style>
+
+    <style name="ElementTextTitle" parent="@style/WhiteOnBlack">
+        <item name="android:textColor">@color/group</item>
+    </style>
+
+    <style name="EntryItem">
+        <item name="android:padding">5.0sp</item>
+    </style>
+
+    <style name="GroupLabel">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+
+    <style name="GroupText" parent="@android:style/Theme.Holo">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/group</item>
+    </style>
+
+    <style name="GroupTextLarge" parent="@android:style/Theme.Holo">
+        <item name="android:textSize">28.0sp</item>
+        <item name="android:textColor">@color/group</item>
+    </style>
+
+    <style name="GroupTextSmall" parent="@android:style/Theme.Holo">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/group</item>
+    </style>
+
+    <style name="NoTitleBar" parent="@android:style/Theme.Holo" />
+
+    <style name="WhiteOnBlack">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+
+    <style name="WhiteOnBlackSmall" parent="@style/WhiteOnBlack">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+
+    <style name="WhiteOnDarkSmall" parent="@style/WhiteOnBlack">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+</resources>

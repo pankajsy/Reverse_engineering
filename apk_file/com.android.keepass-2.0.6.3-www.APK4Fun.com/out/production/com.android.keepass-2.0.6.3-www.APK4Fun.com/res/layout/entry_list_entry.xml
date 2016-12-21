@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@id/entry_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic99_blank" />
+
+        <TextView
+            android:id="@id/entry_text"
+            style="@style/ElementTextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View />
+    </TableRow>
+</TableLayout>

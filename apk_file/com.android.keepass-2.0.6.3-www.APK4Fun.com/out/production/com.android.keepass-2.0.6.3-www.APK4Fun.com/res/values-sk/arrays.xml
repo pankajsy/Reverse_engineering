@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clipboard_timeout_options">
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>5 minút</item>
+        <item>Nikdy</item>
+    </string-array>
+    <string-array name="list_size_options">
+        <item>Malé</item>
+        <item>Stredné</item>
+        <item>Veľké</item>
+    </string-array>
+</resources>

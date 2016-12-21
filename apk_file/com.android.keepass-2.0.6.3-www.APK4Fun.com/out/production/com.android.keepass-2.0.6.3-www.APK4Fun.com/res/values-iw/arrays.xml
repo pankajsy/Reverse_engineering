@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clipboard_timeout_options">
+        <item>30 שניות</item>
+        <item>דקה אחת</item>
+        <item>5 דקות</item>
+        <item>אף פעם</item>
+    </string-array>
+    <string-array name="list_size_options">
+        <item>קטן</item>
+        <item>בינוני</item>
+        <item>גדול</item>
+    </string-array>
+</resources>

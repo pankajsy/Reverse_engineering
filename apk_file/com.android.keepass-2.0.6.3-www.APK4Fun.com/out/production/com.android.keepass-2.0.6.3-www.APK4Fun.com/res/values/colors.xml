@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_highlight">#ff0000dd</color>
+    <color name="group">#ffffffff</color>
+    <color name="group_header_background">#ff888888</color>
+    <color name="icon_background">#ff555555</color>
+    <color name="icon_text">#ff000000</color>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/title"
+        style="@style/WhiteOnDarkSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.keepassdroid.view.TextViewSelect
+        android:id="@id/value"
+        style="@style/EntryItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:typeface="monospace" />
+
+    <View style="@style/Divider" />
+</LinearLayout>
